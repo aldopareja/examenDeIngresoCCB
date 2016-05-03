@@ -19,4 +19,7 @@ write.xlsx(dx,"BD/diagnosticos.xlsx",asTable = T)
 load("backUps/rutas.RData")
 write.xlsx(rutas,"BD/rutas.xlsx",asTable = T)
 
-# asistencias
+# Infoservicios
+
+rutas=data.table(read.xlsx("/Users/aldopareja/Google Drive/CCB/BD/ReporteRutaServicios_03-05-2016-050522.xlsx"))
+save(rutas,file="backUps/rutas.RData")
