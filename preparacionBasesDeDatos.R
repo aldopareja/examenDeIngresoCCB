@@ -7,7 +7,7 @@ rm(list=ls())
 # dx=data.table(read.xlsx("/Users/aldopareja/Google Drive/CCB/BD/ReporteDiagnosticos_25-04-2016-112831.xlsx"))
 # save(dx,file="backUps/diagnosticos.RData")
 load("backUps/diagnosticos.RData")
-dx=dx[,list(ID.DX,Fecha.de.Creación.DX,Nombre.DX,Porcentaje.DX,Estado.DX,
+dx=dx[,list(ID.DX,Fecha.de.Creación.DX,Nombre.DX,Porcentaje.DX,Estado.DX,Ciudad.Usuario,Ciudad.Empresa,
             Tipo.Documento.Usuario,Documento.Usuario,Tipo.Documento.Empresa,Razón.Social
             ,Genero.Usuario,Edad.Usuario,Nivel.Estudio.Usuario,CIIU.DX,Nombre.CIIU.DX,
             Sector.DX,Usuario.Asignado,Area.Asesor.Linea.Asesor.Asignado)]
